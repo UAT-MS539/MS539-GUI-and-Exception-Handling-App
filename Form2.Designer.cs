@@ -28,12 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form2";
+            descriptionLabel = new Label();
+            totalPayLabel = new Label();
+            backButton = new Button();
+            SuspendLayout();
+            // 
+            // descriptionLabel
+            // 
+            descriptionLabel.AutoSize = true;
+            descriptionLabel.Location = new Point(75, 36);
+            descriptionLabel.Name = "descriptionLabel";
+            descriptionLabel.Size = new Size(57, 15);
+            descriptionLabel.TabIndex = 0;
+            descriptionLabel.Text = "Total Pay:";
+            // 
+            // totalPayLabel
+            // 
+            totalPayLabel.BorderStyle = BorderStyle.FixedSingle;
+            totalPayLabel.Location = new Point(148, 36);
+            totalPayLabel.Name = "totalPayLabel";
+            totalPayLabel.Size = new Size(100, 23);
+            totalPayLabel.TabIndex = 1;
+            totalPayLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // backButton
+            // 
+            backButton.Location = new Point(121, 87);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(75, 23);
+            backButton.TabIndex = 2;
+            backButton.Text = "Go Back";
+            backButton.UseVisualStyleBackColor = true;
+            backButton.Click += backButton_Click;
+            // 
+            // Form2
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(337, 138);
+            Controls.Add(backButton);
+            Controls.Add(totalPayLabel);
+            Controls.Add(descriptionLabel);
+            Name = "Form2";
+            Text = "Form2";
+            Load += Form2_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label descriptionLabel;
+        private Label totalPayLabel;
+        private Button backButton;
     }
 }

@@ -43,6 +43,7 @@
             calculateButton = new Button();
             clearButton = new Button();
             exitButton = new Button();
+            totalLabel = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,14 +66,14 @@
             // clearToolStripMenuItem
             // 
             clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            clearToolStripMenuItem.Size = new Size(180, 22);
+            clearToolStripMenuItem.Size = new Size(101, 22);
             clearToolStripMenuItem.Text = "&Clear";
             clearToolStripMenuItem.Click += clearToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(180, 22);
+            exitToolStripMenuItem.Size = new Size(101, 22);
             exitToolStripMenuItem.Text = "E&xit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -142,6 +143,7 @@
             calculateButton.TabIndex = 5;
             calculateButton.Text = "Calculate";
             calculateButton.UseVisualStyleBackColor = true;
+            calculateButton.Click += calculateButton_Click;
             // 
             // clearButton
             // 
@@ -151,6 +153,7 @@
             clearButton.TabIndex = 6;
             clearButton.Text = "Clear";
             clearButton.UseVisualStyleBackColor = true;
+            clearButton.Click += clearButton_Click;
             // 
             // exitButton
             // 
@@ -160,12 +163,23 @@
             exitButton.TabIndex = 7;
             exitButton.Text = "Exit";
             exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += exitButton_Click;
+            // 
+            // totalLabel
+            // 
+            totalLabel.Location = new Point(142, 161);
+            totalLabel.Name = "totalLabel";
+            totalLabel.Size = new Size(100, 23);
+            totalLabel.TabIndex = 8;
             // 
             // Form1
             // 
+            AcceptButton = calculateButton;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = exitButton;
             ClientSize = new Size(346, 301);
+            Controls.Add(totalLabel);
             Controls.Add(exitButton);
             Controls.Add(clearButton);
             Controls.Add(calculateButton);
@@ -200,5 +214,6 @@
         private Button calculateButton;
         private Button clearButton;
         private Button exitButton;
+        private Label totalLabel;
     }
 }
