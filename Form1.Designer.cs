@@ -171,6 +171,7 @@
             totalLabel.Name = "totalLabel";
             totalLabel.Size = new Size(100, 23);
             totalLabel.TabIndex = 8;
+            totalLabel.Visible = false;
             // 
             // Form1
             // 

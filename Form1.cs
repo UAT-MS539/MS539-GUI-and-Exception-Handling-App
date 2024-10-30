@@ -3,7 +3,8 @@ namespace MS539_GUI_and_Exception_Handling_App
     /*Douglas Little
  * MS539 Gui and Exception Hndling App
  * I estimate this will take me about an hour to finish
- * 
+ * Actually took somewhere between 1 1/2 and 2 hours altogether, I kept getting stuck on something and had to take a break
+ * to figure out something else to try.
  */
     public partial class Form1 : Form
     {
@@ -16,6 +17,7 @@ namespace MS539_GUI_and_Exception_Handling_App
         {
             hourlyRateTextBox.Text = String.Empty;
             hoursTextBox.Text = String.Empty;
+            totalLabel.Text = "";
             hoursTextBox.Focus();
         }
 
@@ -64,6 +66,7 @@ namespace MS539_GUI_and_Exception_Handling_App
             form2.Show();
             hourlyRateTextBox.Text = String.Empty;
             hoursTextBox.Text = String.Empty;
+            totalLabel.Text = "";
             hoursTextBox.Focus();
             this.Hide();
         }
@@ -72,6 +75,7 @@ namespace MS539_GUI_and_Exception_Handling_App
         {
             hourlyRateTextBox.Text = String.Empty;
             hoursTextBox.Text = String.Empty;
+            totalLabel.Text = "";
             hoursTextBox.Focus();
         }
 
